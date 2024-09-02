@@ -1,9 +1,19 @@
 name: hello-world
 on: push
-jobs: 
+jobs:
   hello-world-job:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: "npm run test"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Specify the Node.js version you need
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm run test
