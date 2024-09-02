@@ -1,4 +1,4 @@
-const Arithmetic = require("../arithmetic");
+const Arithmetic = require("../arithmetric");
 
 describe("Arithmetic", () => {
   describe("Initialization", () => {
