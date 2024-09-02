@@ -27,7 +27,7 @@ describe("Arithmetic", () => {
     it("should return a new 'Arithmetic' object", () => {
       const obj = new Arithmetic(3).plus(3);
 
-      expect(obj instanceof Arithmetic).toEqual(false);
+      expect(obj instanceof Arithmetic).toEqual(6);
     });
 
     it("should return a new 'Arithmetic' object that has an updated 'number' value", () => {
